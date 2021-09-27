@@ -318,3 +318,20 @@ footer {
   padding: 5px;
   border-radius: 10px 10px 0px 0px;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #abaaaa81;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #abaaaa;
+}
