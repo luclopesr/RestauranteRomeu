@@ -97,7 +97,7 @@ def atualiza_reserva(email):
 
 #Deleta reserva
 @app.route("/reserva/<email>", methods=["DELETE"])
-def deleta_usuario(email):
+def deleta_reserva(email):
     reserva_objeto = Reserva.query.filter_by(email=email).first()
 
     try:
