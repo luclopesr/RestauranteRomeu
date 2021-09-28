@@ -171,11 +171,12 @@ main {
   color: #ffffff;
 }
 
-#reservas,
-#conheca {
-  margin: 30px 50px 30px 50px;
+#reservas, #conheca {
+  margin: 0px 50px 30px 50px;
   width: auto;
+  padding-top: 110px;
 }
+
 
 #reservas h1 {
   font-size: 36px;
@@ -188,8 +189,7 @@ form {
   font-size: 24px;
 }
 
-input,
-select {
+input, select {
   font-family: var(--fonte-padrao);
   font-size: 18px;
   font-weight: 500;
@@ -226,13 +226,12 @@ select {
   border-radius: 5px;
 }
 
-#email,
-#nome {
+#email, #nome {
   width: 430px;
 }
 
-#conheca {
-  margin-top: 100px;
+#horario, #mesa {
+  width: 215px;
 }
 
 #conheca h1 {
@@ -251,7 +250,7 @@ select {
   width: 100px;
   height: 5px;
   left: 520px;
-  top: 1770px;
+  top: 1970px;
   border-radius: 3px 0px 0px 3px;
 
   background: var(--cor4);
@@ -262,7 +261,7 @@ select {
   width: 100px;
   height: 5px;
   left: 620px;
-  top: 1770px;
+  top: 1970px;
 
   background: #ffffff;
 }
@@ -272,7 +271,7 @@ select {
   width: 100px;
   height: 5px;
   left: 720px;
-  top: 1770px;
+  top: 1970px;
   border-radius: 0px 3px 3px 0px;
 
   background: red;
@@ -283,7 +282,7 @@ select {
   width: 100px;
   height: 5px;
   left: 520px;
-  top: 2020px;
+  top: 2220px;
   border-radius: 3px 0px 0px 3px;
 
   background: var(--cor4);
@@ -294,7 +293,7 @@ select {
   width: 100px;
   height: 5px;
   left: 620px;
-  top: 2020px;
+  top: 2220px;
 
   background: #ffffff;
 }
@@ -304,7 +303,7 @@ select {
   width: 100px;
   height: 5px;
   left: 720px;
-  top: 2020px;
+  top: 2220px;
   border-radius: 0px 3px 3px 0px;
 
   background: red;
@@ -324,14 +323,43 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #abaaaa81;
+  background-color: var(--cor2);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--cor0);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #abaaaa;
+  background-color: var(--cor1);
+}
+
+/*
+.seat {
+  background-color: #4b4b4b;
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.seat:nth-of-type(2){
+  margin-right:18px;
+}
+
+.seat:nth-last-of-type(2){
+  margin-left: 18px;
+}
+
+.row{
+  display:flex;
+} */
+
+html {
+  scroll-behavior: smooth;
 }

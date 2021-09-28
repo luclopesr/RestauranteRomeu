@@ -36,6 +36,27 @@
 
         <section class="bloco" id="reservas">
           <h1>RESERVAS</h1>
+          <!--
+            <div class="container">
+              <div class="row">
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+              </div>
+
+              <div class="row">
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+                  <div class="seat"></div>
+              </div>
+          </div>
+        -->
           <form>
             <div>
               <label>Nome</label>
@@ -79,14 +100,25 @@
 
             <div>
               <label>N° de Pessoas</label>
-              <input
-                type="number"
-                name="pessoas"
-                id="pessoas"
-                min="1"
-                max="10"
-                required
-              />
+              <input type="number" name="pessoas" id="pessoas" min="1" max="10" required />
+            </div>
+
+            <div>
+              <label>N° da Mesa</label>
+              <select name="mesa" id="mesa" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Mesa 1</option>
+                <option>Mesa 2</option>
+                <option>Mesa 3</option>
+                <option>Mesa 4</option>
+                <option>Mesa 5</option>
+                <option>Mesa 6</option>
+                <option>Mesa 7</option>
+                <option>Mesa 8</option>
+                <option>Mesa 9</option>
+                <option>Mesa 10</option>
+                <option>Mesa 11</option>
+              </select>
             </div>
 
             <button id="disponibilidade">Verificar Disponibilidade</button>
@@ -128,6 +160,5 @@
       <p>Site desenvolvido por alunos do curso de Engenharias da UnB/FGA.</p>
     </footer>
 
-    <script src="script.js"></script>
   </body>
 </html>
