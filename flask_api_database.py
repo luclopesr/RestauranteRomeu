@@ -23,7 +23,7 @@ class Reserva(db.Model):
 
 #seleciona reservas
 @app.route("/reserva", methods=["GET"])
-def seleciona_usuarios():
+def seleciona_reserva():
     reservas_objetos = Reserva.query.all()
     reservas_json = [reserva.to_json() for reserva in reservas_objetos]
     print(reservas_json)
