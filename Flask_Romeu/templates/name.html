@@ -1,0 +1,31 @@
+{% extends 'romeu.html' %}
+
+{% block content %}
+
+<h1>Reservas</h1>
+<br/>
+<form method="POST">
+    {{ form.hidden_tag() }}
+
+    {{ form.name.label }}
+    {{ form.name() }}
+    <br/>
+    {{ form.email.label }}
+    {{ form.email() }}
+    <br/>
+    {{ form.date.label }}
+    {{ form.date() }}
+    <br/>
+    {{ form.hora.label }}
+    {{ form.hora() }}
+    <br/>
+    {{ form.qtd_pessoas.label }}
+    {{ form.qtd_pessoas() }}
+    <br/>
+    {{ form.mesa.label }}
+    {{ form.mesa() }}
+    <br/>
+    {{ form.submit() }}
+</form>
+
+{% endblock %}
