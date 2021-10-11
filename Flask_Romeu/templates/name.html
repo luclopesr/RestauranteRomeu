@@ -1,22 +1,38 @@
 {% extends 'romeu.html' %}
 
 {% block content %}
-<form method="POST">
-    {{ form.hidden_tag() }}
 
-    {{ form.name.label }} {{ form.name() }}
-    <br/>
-    {{ form.email.label }} {{ form.email() }}
-    <br/>
-    {{ form.date.label }} {{ form.date() }}
-    <br/>
-    {{ form.hora.label }} {{ form.hora() }}
-    <br/>
-    {{ form.qtd_pessoas.label }} {{ form.qtd_pessoas() }}
-    <br/>
-    {{ form.mesa.label }} {{ form.mesa() }}
-    <br/>
-    {{ form.submit() }}
-</form>
+<h1>RESERVAS</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        
+        {{ form.name.label }}
+        {{ form.name(class="nome", placeholder="Digite seu nome completo") }}
+        <br/>
+        {{ form.email.label }}
+        {{ form.email(class="email", placeholder="Digite seu e-mail") }}
+        <br/>
+        {{ form.data.label }}
+        {{ form.data(placeholder="dd/mm/aaaa") }}
+        <br/>
+        {{ form.horario.label }}
+        {{ form.horario(class="horario", placeholder="Selecione") }}
+        <br/>
+        {{ form.qtd_pessoas.label }}
+        {{ form.qtd_pessoas() }}
+        <br/>
+        {{ form.mesa.label }}
+        {{ form.mesa(class="mesa", placeholder="Selecione") }}
+        <br/>
+        {{ form.verificar_disponibilidade(class="disponibilidade") }}
+        {{ form.submit(class="enviar") }}
+        
+        {% if form.errors.mesa %}
+        <div class="alert alert-primary" role="alert">
+            {{ form.errors.mesa }}
+        </div>
+        {% endif %}
+
+    </form>
 
 {% endblock %}
