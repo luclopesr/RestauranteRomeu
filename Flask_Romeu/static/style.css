@@ -201,7 +201,7 @@ input, select {
   border-radius: 5px;
 }
 
-#disponibilidade {
+.disponibilidade {
   display: inline;
   background-color: white;
   border-radius: 5px;
@@ -214,7 +214,7 @@ input, select {
   padding: 5px;
 }
 
-#enviar {
+.enviar {
   font-family: var(--fonte-padrao);
   font-size: 18px;
   font-weight: bold;
@@ -226,11 +226,11 @@ input, select {
   border-radius: 5px;
 }
 
-#email, #nome {
+.email, .nome {
   width: 430px;
 }
 
-#horario, #mesa {
+.horario, .mesa {
   width: 215px;
 }
 
@@ -249,8 +249,8 @@ input, select {
   position: absolute;
   width: 100px;
   height: 5px;
-  left: 520px;
-  top: 1970px;
+  left: 720px;
+  top: 2490px;
   border-radius: 3px 0px 0px 3px;
 
   background: var(--cor4);
@@ -260,8 +260,8 @@ input, select {
   position: absolute;
   width: 100px;
   height: 5px;
-  left: 620px;
-  top: 1970px;
+  left: 820px;
+  top: 2490px;
 
   background: #ffffff;
 }
@@ -270,8 +270,8 @@ input, select {
   position: absolute;
   width: 100px;
   height: 5px;
-  left: 720px;
-  top: 1970px;
+  left: 920px;
+  top: 2490px;
   border-radius: 0px 3px 3px 0px;
 
   background: red;
@@ -281,8 +281,8 @@ input, select {
   position: absolute;
   width: 100px;
   height: 5px;
-  left: 520px;
-  top: 2220px;
+  left: 720px;
+  top: 2250px;
   border-radius: 3px 0px 0px 3px;
 
   background: var(--cor4);
@@ -292,8 +292,8 @@ input, select {
   position: absolute;
   width: 100px;
   height: 5px;
-  left: 620px;
-  top: 2220px;
+  left: 820px;
+  top: 2250px;
 
   background: #ffffff;
 }
@@ -302,8 +302,8 @@ input, select {
   position: absolute;
   width: 100px;
   height: 5px;
-  left: 720px;
-  top: 2220px;
+  left: 920px;
+  top: 2250px;
   border-radius: 0px 3px 3px 0px;
 
   background: red;
@@ -359,4 +359,10 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+#interior{
+  background-color:var(--cor0) ;
+  margin-left: 15px;
+  margin-bottom: 20px;
 }
