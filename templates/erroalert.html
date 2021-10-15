@@ -1,0 +1,9 @@
+{% extends 'name.html' %}
+
+{% block erroralert %}
+    <div class="alert alert-danger" role="alert">
+        Reserva não realizada! Essa mesa já está reservada neste horário e data. 
+        <br/>
+        Selecione outra mesa no mesmo horário ou outro dia!
+    </div>
+{% endblock %}

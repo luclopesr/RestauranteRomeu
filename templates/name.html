@@ -1,0 +1,39 @@
+{% extends 'romeu.html' %}
+
+{% block content %}
+
+<h1>RESERVAS</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        
+        {{ form.name.label }}
+        {{ form.name(class="nome", placeholder="Digite seu nome completo") }}
+        <br/>
+        {{ form.email.label }}
+        {{ form.email(class="email", placeholder="Digite seu e-mail") }}
+        <br/>
+        {{ form.data.label }}
+        {{ form.data(placeholder="dd/mm/aaaa") }}
+        <br/>
+        {{ form.horario.label }}
+        {{ form.horario(class="horario", placeholder="Selecione") }}
+        <br/>
+        {{ form.qtd_pessoas.label }}
+        {{ form.qtd_pessoas() }}
+        <br/>
+        {{ form.mesa.label }}
+        {{ form.mesa(class="mesa", placeholder="Selecione") }}
+        <br/>
+        {{ form.submit(class="enviar") }}
+        
+        <!-- Alerta de reserva realizada -->
+        {% block successalert %}
+        {% endblock %}
+
+        <!-- Alerta de reserva não realizada -->
+        {% block erroralert %}
+        {% endblock %}
+    
+    </form>
+
+{% endblock %}
