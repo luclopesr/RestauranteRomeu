@@ -117,6 +117,8 @@ nav > a {
 
 nav > a:hover {
   background-color: rgba(255, 255, 255, 0.363);
+  color: white;
+  text-decoration: none;
 }
 
 nav > a:active {
@@ -145,38 +147,12 @@ main {
   height: 100%;
 }
 
-#imagemColiseu {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  left: 483px;
-  top: 50px;
-}
-
-#romeuLogoCentral {
-  position: absolute;
-  width: 613px;
-  height: 117px;
-  left: 426px;
-  top: 398px;
-  font-family: Cormorant;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 144px;
-  line-height: 174px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #ffffff;
-}
-
-#reservas, #conheca {
+#reservas,
+#conheca {
   margin: 0px 50px 30px 50px;
   width: auto;
   padding-top: 110px;
 }
-
 
 #reservas h1 {
   font-size: 36px;
@@ -189,7 +165,8 @@ form {
   font-size: 24px;
 }
 
-input, select {
+input,
+select {
   font-family: var(--fonte-padrao);
   font-size: 18px;
   font-weight: 500;
@@ -226,11 +203,13 @@ input, select {
   border-radius: 5px;
 }
 
-.email, .nome {
+.email,
+.nome {
   width: 430px;
 }
 
-.horario, .mesa {
+.horario,
+.mesa {
   width: 215px;
 }
 
@@ -361,8 +340,8 @@ html {
   scroll-behavior: smooth;
 }
 
-#interior{
-  background-color:var(--cor0) ;
+#interior {
+  background-color: var(--cor0);
   margin-left: 15px;
   margin-bottom: 20px;
 }
