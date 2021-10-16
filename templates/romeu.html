@@ -32,6 +32,7 @@
     <nav class="menu">
       <a href="#home">HOME</a>
       <a href="#reservas">RESERVAS</a>
+      <a href="#cardapio">CARDÁPIO</a>
       <a href="#conheca">CONHEÇA-NOS</a>
     </nav>
 
@@ -50,11 +51,11 @@
             <div class="col-lg-12" id="interior">
               {% block content %} {% endblock %}
             </div>
-            <img
+            <!--<img
               src="{{ url_for('static', filename='mapainterno-525.png') }}"
               alt="Mapa Interno"
               id="mapainterno"
-            />
+            />-->
           </div>
           <!--
           <h1>RESERVAS</h1>
@@ -145,6 +146,10 @@
             <button id="enviar" type="submit">ENVIAR</button>
           </form>
           -->
+        </section>
+
+        <section class="bloco" id="cardapio">
+          <h1>CARDÁPIO</h1>
         </section>
 
         <section class="bloco" id="conheca">
