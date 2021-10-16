@@ -160,12 +160,6 @@ main {
   top: 1350px;
 }
 
-.cardapios img {
-  width: 35%;
-  height: 35%;
-  padding: 0px 0px 0px 0px;
-}
-
 #reservas,
 #conheca,
 #cardapio {
@@ -191,7 +185,7 @@ select {
   font-size: 18px;
   font-weight: 500;
   color: var(--cor1);
-  width: 200px;
+  width: 216px;
   padding: 5px;
   display: block;
   background-color: var(--cor2);
@@ -238,6 +232,11 @@ select {
   font-weight: 500;
 }
 
+.cardapios img {
+  width: 33.1%;
+  height: 35%;
+}
+
 #conheca h1 {
   font-size: 36px;
   font-weight: 500;
@@ -254,7 +253,7 @@ select {
   width: 100px;
   height: 5px;
   left: 39%;
-  top: 460%;
+  top: 457%;
   border-radius: 3px 0px 0px 3px;
 
   background: var(--cor4);
@@ -265,7 +264,7 @@ select {
   width: 100px;
   height: 5px;
   left: 46%;
-  top: 460%;
+  top: 457%;
 
   background: #ffffff;
 }
@@ -275,7 +274,7 @@ select {
   width: 100px;
   height: 5px;
   left: 53%;
-  top: 460%;
+  top: 457%;
   border-radius: 0px 3px 3px 0px;
 
   background: red;
@@ -286,7 +285,7 @@ select {
   width: 100px;
   height: 5px;
   left: 39%;
-  top: 495%;
+  top: 492%;
   border-radius: 3px 0px 0px 3px;
 
   background: var(--cor4);
@@ -297,7 +296,7 @@ select {
   width: 100px;
   height: 5px;
   left: 46%;
-  top: 495%;
+  top: 492%;
 
   background: #ffffff;
 }
@@ -307,7 +306,7 @@ select {
   width: 100px;
   height: 5px;
   left: 53%;
-  top: 495%;
+  top: 492%;
   border-radius: 0px 3px 3px 0px;
 
   background: red;
