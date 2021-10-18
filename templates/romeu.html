@@ -47,107 +47,15 @@
         </section>
 
         <section class="bloco" id="reservas">
-          <div class="container-fluid d-flex justify-content-center" id="total">
-            <div class="col-lg-12" id="interior">
-              {% block content %} {% endblock %}
-            </div>
-            <!--<img
-              src="{{ url_for('static', filename='mapainterno-525.png') }}"
-              alt="Mapa Interno"
-              id="mapainterno"
-            />-->
-          </div>
-          <!--
-          <h1>RESERVAS</h1>
-            <div class="container">
-              <div class="row">
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-              </div>
-              <div class="row">
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-                  <div class="seat"></div>
-              </div>
-          </div>
-    
-          <form>
-            <div>
-              <label>Nome</label>
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Digite seu nome completo"
-                required
-              />
-            </div>
-
-            <div>
-              <label>E-mail</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Digite seu e-mail"
-                required
-              />
-            </div>
-
-            <div>
-              <label>Data</label>
-              <input type="date" name="data" id="data" required />
-            </div>
-
-            <div>
-              <label>Horário</label>
-              <select name="horario" id="horario" required>
-                <option selected disabled value="">Selecione</option>
-                <option>12:00</option>
-                <option>14:00</option>
-                <option>16:00</option>
-                <option>18:00</option>
-                <option>20:00</option>
-                <option>22:00</option>
-              </select>
-            </div>
-
-            <div>
-              <label>N° de Pessoas</label>
-              <input type="number" name="pessoas" id="pessoas" min="1" max="10" required />
-            </div>
-
-            <div>
-              <label>N° da Mesa</label>
-              <select name="mesa" id="mesa" required>
-                <option selected disabled value="">Selecione</option>
-                <option>Mesa 1</option>
-                <option>Mesa 2</option>
-                <option>Mesa 3</option>
-                <option>Mesa 4</option>
-                <option>Mesa 5</option>
-                <option>Mesa 6</option>
-                <option>Mesa 7</option>
-                <option>Mesa 8</option>
-                <option>Mesa 9</option>
-                <option>Mesa 10</option>
-                <option>Mesa 11</option>
-              </select>
-            </div>
-
-            <button id="disponibilidade">Verificar Disponibilidade</button>
-            <button id="enviar" type="submit">ENVIAR</button>
-          </form>
-          -->
+          <!-- Formulário em Python -->
+          {% block content %} {% endblock %}
+          <!-- Imagem Mapa Interno -->
+          <img
+            src="{{ url_for('static', filename='mapainterno-525.png') }}"
+            alt="Mapa Interno"
+            id="mapainterno"
+          />
         </section>
-
         <section class="bloco" id="cardapio">
           <h1>CARDÁPIO</h1>
           <div class="cardapios">
@@ -171,19 +79,22 @@
 
         <section class="bloco" id="conheca">
           <h1>QUEM SOMOS?</h1>
-          <p>
+          <p id="paragrafo1">
             A Romeu é um restaurante italiano de luxo pensado e desenvolvido por
             sete jovens graduandos em Engenharias pela Universidade de Brasília
             - UnB/FGA. Portanto, se trata de um restaurante/site meramente
             fictício.
           </p>
 
-          <div id="retangulo4"></div>
-          <div id="retangulo5"></div>
-          <div id="retangulo6"></div>
+          <div class="bandeira">
+            <img
+              src="{{ url_for('static', filename='bandeira-300.png') }}"
+              alt="bandeira"
+            />
+          </div>
 
-          <h1>POR QUE "ROMEU"?</h1>
-          <p>
+          <h1 id="titulo2">POR QUE "ROMEU"?</h1>
+          <p id="paragrafo2">
             O nome foi escolhido devido à semelhança com “Roma”, capital
             italiana. Também, faz referência à peça escrita por William
             Shakespeare, Romeu e Julieta. Além destes, os desenvolvedores
@@ -192,9 +103,12 @@
             universitário da UnB.
           </p>
 
-          <div id="retangulo7"></div>
-          <div id="retangulo8"></div>
-          <div id="retangulo9"></div>
+          <div class="bandeira">
+            <img
+              src="{{ url_for('static', filename='bandeira-300.png') }}"
+              alt="bandeira"
+            />
+          </div>
         </section>
       </section>
     </main>
