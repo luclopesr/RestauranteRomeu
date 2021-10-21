@@ -23,42 +23,59 @@
 body {
   background-color: var(--cor2);
   margin: auto;
-  min-width: 600px;
-  max-width: 2000px;
+  max-width: 100%;
   width: 100%;
   font-family: var(--fonte-padrao);
 }
+
+/* HEADER STYLE*/
 
 header {
   text-align: left;
 }
 
-#romeu {
+.background-header {
   position: fixed;
-  width: 221px;
-  height: 74px;
-  left: 27px;
-  top: 20px;
+  display: grid;
+  width: 100%;
+  height: 12%;
+  grid-template-columns: 20% auto 60%;
+  grid-template-rows: 100px;
+  grid-template-areas: "left center right";
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 0px 0px 30px 30px;
+  transition: 0.5s;
+}
 
-  font-family: Cormorant;
-  font-style: normal;
-  font-weight: normal;
+.header-title {
+  grid-area: left;
+}
+
+.header-menu {
+  grid-area: right;
+  width: 100%;
+}
+
+.page-title {
+  font-family: var(--fonte-logo);
+  display: grid;
+  position: relative;
   font-size: 48px;
   line-height: 58px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   color: #ffffff;
-  z-index: 99;
+  align-self: center;
+  margin-left: 15%;
+  margin-top: 0px;
 }
 
 #retangulo1 {
+  display: grid;
   position: fixed;
+  align-self: center;
   width: 60px;
   height: 9px;
-  left: 21px;
-  top: 85px;
+  left: 32px;
+  top: 60px;
   border-radius: 3px 0px 0px 3px;
 
   background: var(--cor4);
@@ -66,50 +83,42 @@ header {
 }
 
 #retangulo2 {
+  display: grid;
   position: fixed;
+  align-self: center;
   width: 60px;
   height: 9px;
-  left: 81px;
-  top: 85px;
+  left: 92px;
+  top: 60px;
 
   background: #ffffff;
   z-index: 99;
 }
 
 #retangulo3 {
+  display: grid;
+  align-self: center;
   position: fixed;
   width: 60px;
   height: 9px;
-  left: 141px;
-  top: 85px;
+  left: 152px;
+  top: 60px;
   border-radius: 0px 3px 3px 0px;
 
   background: #ff0000;
   z-index: 99;
 }
 
-#retanguloBackground {
-  position: fixed;
-  width: 100%;
-  height: 113px;
-  left: 0px;
-  top: 0px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 0px 0px 30px 30px;
-  transition: 0.5s;
-  opacity: 0.7;
-  z-index: 99;
-}
-
 nav {
+  display: grid;
+  align-self: right;
   font-family: var(--fonte-padrao);
-  padding: 10px;
-  position: fixed;
-  width: 550px;
-  height: 30px;
-  left: 800px;
-  top: 32px;
-  z-index: 99;
+  grid-area: right;
+  padding: 0px;
+  position: relative;
+  width: 30%;
+  height: 20px;
+  top: 25%;
 }
 
 nav > a {
@@ -131,9 +140,9 @@ nav > a:active {
   color: red;
 }
 
+/* MAIN STYLE */
+
 main {
-  min-width: 300px;
-  max-width: 1366px;
   margin: auto;
   margin-bottom: 30px;
   background-color: var(--cor0);
@@ -150,33 +159,41 @@ main {
 
 #imagemRestaurante {
   width: 100%;
-  height: 100%;
 }
 
-#mapainterno {
-  width: 544.82px;
-  height: 515px;
-  position: absolute;
-  left: 680px;
-  top: 1050px;
+.restaurante-display {
+  display: flex;
 }
 
-#reservas,
-#conheca,
-#cardapio {
-  margin: 0px 50px 30px 50px;
-  width: auto;
-  padding-top: 110px;
+.reservar-mesa {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 60%;
+  grid-template-areas:
+    "h1 ."
+    "reservar-mesa-form mapa";
+  display: grid;
+  padding: 1%;
+  margin: 20px 50px 30px 50px;
+  padding-top: 7%;
 }
 
 #reservas h1 {
   font-size: 36px;
   font-weight: 500;
-  margin-bottom: 25px;
+}
+
+.mesa {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  grid-area: mapa;
+  margin: auto;
 }
 
 form {
   display: block;
+  font-family: var(--fonte-padrao);
+  grid-area: reservar-mesa-form;
   font-size: 24px;
 }
 
@@ -219,18 +236,28 @@ select {
   margin-left: 13px;
 }
 
-form {
-  font-family: var(--fonte-padrao);
-}
-
 #cardapio h1 {
   font-size: 36px;
   font-weight: 500;
 }
 
 .cardapios img {
+  display: flex;
   width: 33.1%;
   height: 35%;
+}
+
+.quem-somos {
+  padding: 1%;
+  margin: 0px 50px 30px 50px;
+}
+
+.quem-somos img {
+  display: flex;
+  align-self: center;
+  width: 25%;
+  grid-area: bandeiras;
+  margin: auto;
 }
 
 #conheca h1 {
@@ -257,9 +284,7 @@ form {
   margin: 0px;
 }
 
-.bandeira {
-  text-align: center;
-}
+/* FOOTER STYLE */
 
 footer {
   background-color: var(--cor0);

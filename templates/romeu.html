@@ -22,94 +22,94 @@
   </head>
   <body>
     <header>
-      <div id="retanguloBackground"></div>
-      <h1 id="romeu">ROMEU</h1>
-      <div id="retangulo1"></div>
-      <div id="retangulo2"></div>
-      <div id="retangulo3"></div>
+      <div class="background-header">
+        <div id="retanguloBackground" class="header-title">
+          <h1 class="page-title">ROMEU</h1>
+          <div id="retangulo1"></div>
+          <div id="retangulo2"></div>
+          <div id="retangulo3"></div>
+        </div>
+
+        <nav class="header-menu">
+          <a href="#home">HOME</a>
+          <a href="#reservas">RESERVAS</a>
+          <a href="#cardapio">CARDÁPIO</a>
+          <a href="#conheca">CONHEÇA-NOS </a>
+        </nav>
+      </div>
     </header>
 
-    <nav class="menu">
-      <a href="#home">HOME</a>
-      <a href="#reservas">RESERVAS</a>
-      <a href="#cardapio">CARDÁPIO</a>
-      <a href="#conheca">CONHEÇA-NOS</a>
-    </nav>
-
     <main>
-      <section class="sections">
-        <section class="bloco" id="home">
+      <section class="centro-pagina" id="home">
+        <div class="restaurante-display">
           <img
             src="{{ url_for('static', filename='restaurant-1280.png') }}"
             alt="Restaurante"
             id="imagemRestaurante"
           />
-        </section>
+        </div>
+      </section>
 
-        <section class="bloco" id="reservas">
-          <!-- Formulário em Python -->
-          {% block content %} {% endblock %}
-          <!-- Imagem Mapa Interno -->
+      <section class="reservar-mesa" id="reservas">
+        <!-- Formulário em Python -->
+        {% block content %} {% endblock %}
+        <!-- Imagem Mapa Interno -->
+        <div class="mesa">
           <img
             src="{{ url_for('static', filename='mapainterno-525.png') }}"
             alt="Mapa Interno"
             id="mapainterno"
           />
-        </section>
-        <section class="bloco" id="cardapio">
-          <h1>CARDÁPIO</h1>
-          <div class="cardapios">
-            <img
-              src="{{ url_for('static', filename='cardapio1.png') }}"
-              alt="cardápio"
-              id="cardapio1"
-            />
-            <img
-              src="{{ url_for('static', filename='cardapio2.png') }}"
-              alt="cardápio"
-              id="cardapio2"
-            />
-            <img
-              src="{{ url_for('static', filename='cardapio3.png') }}"
-              alt="cardápio"
-              id="cardapio3"
-            />
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="bloco" id="conheca">
-          <h1>QUEM SOMOS?</h1>
-          <p id="paragrafo1">
-            A Romeu é um restaurante italiano de luxo pensado e desenvolvido por
-            sete jovens graduandos em Engenharias pela Universidade de Brasília
-            - UnB/FGA. Portanto, se trata de um restaurante/site meramente
-            fictício.
-          </p>
+      <section class="bloco" id="cardapio">
+        <h1>CARDÁPIO</h1>
+        <div class="cardapios">
+          <img
+            src="{{ url_for('static', filename='cardapio1.png') }}"
+            alt="cardápio"
+            id="cardapio1"
+          />
+          <img
+            src="{{ url_for('static', filename='cardapio2.png') }}"
+            alt="cardápio"
+            id="cardapio2"
+          />
+          <img
+            src="{{ url_for('static', filename='cardapio3.png') }}"
+            alt="cardápio"
+            id="cardapio3"
+          />
+        </div>
+      </section>
 
-          <div class="bandeira">
-            <img
-              src="{{ url_for('static', filename='bandeira-300.png') }}"
-              alt="bandeira"
-            />
-          </div>
+      <section class="quem-somos" id="conheca">
+        <h1>QUEM SOMOS?</h1>
+        <p id="paragrafo1">
+          A Romeu é um restaurante italiano de luxo pensado e desenvolvido por
+          sete jovens graduandos em Engenharias pela Universidade de Brasília -
+          UnB/FGA. Portanto, se trata de um restaurante/site meramente fictício.
+        </p>
 
-          <h1 id="titulo2">POR QUE "ROMEU"?</h1>
-          <p id="paragrafo2">
-            O nome foi escolhido devido à semelhança com “Roma”, capital
-            italiana. Também, faz referência à peça escrita por William
-            Shakespeare, Romeu e Julieta. Além destes, os desenvolvedores
-            buscaram ligar a ideia à universidade, por isso, o nome se inicia
-            com ‘R’ e termina com ‘U’, fazendo alusão ao RU, restaurante
-            universitário da UnB.
-          </p>
+        <img
+          src="{{ url_for('static', filename='bandeira-300.png') }}"
+          alt="bandeira"
+        />
 
-          <div class="bandeira">
-            <img
-              src="{{ url_for('static', filename='bandeira-300.png') }}"
-              alt="bandeira"
-            />
-          </div>
-        </section>
+        <h1 id="titulo2">POR QUE "ROMEU"?</h1>
+        <p id="paragrafo2">
+          O nome foi escolhido devido à semelhança com “Roma”, capital italiana.
+          Também, faz referência à peça escrita por William Shakespeare, Romeu e
+          Julieta. Além destes, os desenvolvedores buscaram ligar a ideia à
+          universidade, por isso, o nome se inicia com ‘R’ e termina com ‘U’,
+          fazendo alusão ao RU, restaurante universitário da UnB.
+        </p>
+
+        <img
+          src="{{ url_for('static', filename='bandeira-300.png') }}"
+          alt="bandeira"
+        />
       </section>
     </main>
 
