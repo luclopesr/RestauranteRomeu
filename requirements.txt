@@ -3,3 +3,4 @@ pip install flask-sqlalchemy
 pip install mysql-connector-python
 pip install mysqlclient
 pip install -U Flask-WTF
+pip install email_validator
