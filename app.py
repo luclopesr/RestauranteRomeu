@@ -25,7 +25,7 @@ class Reserva(db.Model):
 
 class ReservaForm(FlaskForm):
     name = StringField("Nome: ", validators=[DataRequired()])
-    email = StringField("E-mail: ", validators=[DataRequired()])
+    email = EmailField('Email: ', [validators.DataRequired(), validators.Email()])
     data = DateField('Data: ', format='%Y-%m-%d')
     horario = SelectField('Horário: ', choices=[('12:00'), ('14:00'), ('16:00'), ('18:00'), ('20:00'), ('22:00')])
     qtd_pessoas = SelectField("N° de Pessoas: ", choices=[('1'), ('2'), ('3'), ('4'), ('5'), ('6'), ('7'), ('8'), ('9'), ('10')], validators=[DataRequired()])
