@@ -4,7 +4,7 @@ from flask_wtf import FlaskForm
 from werkzeug.utils import redirect
 from wtforms import StringField, SubmitField
 from wtforms.fields.core import SelectField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, EmailField
 from wtforms.fields.html5 import DateField
 from flask_sqlalchemy import SQLAlchemy
 
