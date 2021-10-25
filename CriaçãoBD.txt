@@ -1,0 +1,24 @@
+Passo a passo de como criar o banco de dados MySQL através do Flask e XAMPP
+
+1 - definir a rota do servidor local na app.py 
+exemplo: app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/reserva'
+
+Note que o nome a ser identificado será "reserva"
+
+2 - Abrir o  XAMPP e clicar em "start" no Apache e MySQL
+
+3 - Acessar a seguinte rota: localhost/myphpadmin
+
+4 - Com o myphpadmin aberto criar uma tabela com o mesmo nome da rota do servidor, no caso foi "reserva"
+
+5 - Após esses processedimentos abrir o terminal no VSCode e digitar os seguintes comando:
+    - python
+    - from app import db
+    - db.create_all()
+    
+6 - Após esses procedimentos dar um F5 na página myphpadmin que as colunas serão criadas.    
+
+    
+  
+    
+
