@@ -24,10 +24,15 @@
     <header>
       <div class="background-header">
         <div id="retanguloBackground" class="header-title">
-          <h1 class="page-title">ROMEU</h1>
-          <div id="retangulo1"></div>
+          <h1 class="page-title"><a id="page-title" href="#">ROMEU</a></h1>
+          <img
+            src="{{ url_for('static', filename='bandeira-180.png') }}"
+            alt="bandeira"
+            id="bandeiraRomeu"
+          />
+          <!--<div id="retangulo1"></div>
           <div id="retangulo2"></div>
-          <div id="retangulo3"></div>
+          <div id="retangulo3"></div>-->
         </div>
 
         <nav class="header-menu">

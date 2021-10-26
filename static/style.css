@@ -45,6 +45,7 @@ header {
   background-color: rgba(0, 0, 0, 0.55);
   border-radius: 0px 0px 30px 30px;
   transition: 0.5s;
+  z-index: 99;
 }
 
 .header-title {
@@ -56,19 +57,26 @@ header {
   width: 100%;
 }
 
-.page-title {
+#page-title {
   font-family: var(--fonte-logo);
   display: grid;
-  position: relative;
   font-size: 48px;
   line-height: 58px;
   color: #ffffff;
   align-self: center;
   margin-left: 15%;
   margin-top: 0px;
+  text-decoration: none;
 }
 
-#retangulo1 {
+#bandeiraRomeu {
+  display: grid;
+  align-self: center;
+  grid-area: left;
+  margin: auto;
+}
+
+/* #retangulo1 {
   display: grid;
   position: fixed;
   align-self: center;
@@ -107,23 +115,24 @@ header {
 
   background: #ff0000;
   z-index: 99;
-}
+} */
 
 nav {
   display: grid;
   align-self: right;
   font-family: var(--fonte-padrao);
   grid-area: right;
-  padding: 0px;
+  padding-right: 10px;
   position: relative;
   width: 30%;
   height: 20px;
   top: 25%;
+  text-align: right;
 }
 
 nav > a {
   color: white;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 15px 5px 15px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
