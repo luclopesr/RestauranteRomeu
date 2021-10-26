@@ -1,19 +1,31 @@
+<!-- Extensão do código em romeu.html -->
 {% extends 'romeu.html' %} {% block content %}
 
+<!-- Início Forms em Python -->
 <h1>RESERVAS</h1>
 <form method="POST">
-  {{ form.hidden_tag() }} {{ form.name.label }} {{ form.name(class="nome",
-  placeholder="Digite seu nome completo") }} {{ form.email.label }} {{
-  form.email(class="email", placeholder="Digite seu e-mail") }}
+  {{ form.hidden_tag() }} 
+  
+  <!-- Input Name -->
+  {{ form.name.label }} 
+  {{ form.name(class="nome", placeholder="Digite seu nome completo") }}
+  <!-- Validador Name -->
+  {% block erroralertName %} {% endblock %} 
+  
+  <!-- Input Email -->
+  {{ form.email.label }} 
+  {{ form.email(class="email", placeholder="Digite seu e-mail") }}
 
   <table border="0">
     <tr>
       <td>
+        <!-- Input Data -->
         {{ form.data.label }} {{ form.data(class="data",
         placeholder="dd/mm/aaaa") }}
       </td>
 
       <td>
+        <!-- Input Horário -->
         &nbsp; {{ form.horario.label }} {{ form.horario(class="horario",
         placeholder="Selecione") }}
       </td>
@@ -21,16 +33,19 @@
 
     <tr>
       <td>
+        <!-- Input qtd_pessoas -->
         {{ form.qtd_pessoas.label }} {{ form.qtd_pessoas(class="pessoas") }}
       </td>
 
       <td>
+        <!-- Input Mesa -->
         &nbsp; {{ form.mesa.label }} {{ form.mesa(class="mesa",
         placeholder="Selecione") }}
       </td>
     </tr>
   </table>
-
+  
+  <!-- Button Submit -->
   {{ form.submit(class="enviar") }}
 
   <!-- Alerta de reserva realizada -->
