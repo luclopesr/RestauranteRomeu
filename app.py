@@ -1,4 +1,3 @@
-# importações das bibliotecas flask 
 from flask import Flask, render_template
 from flask.helpers import url_for
 from flask_wtf import FlaskForm
