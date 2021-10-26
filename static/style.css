@@ -61,11 +61,11 @@ header {
   font-family: var(--fonte-logo);
   display: grid;
   font-size: 48px;
-  line-height: 58px;
+  line-height: 40px;
   color: #ffffff;
   align-self: center;
   margin-left: 15%;
-  margin-top: 0px;
+  margin-top: 10px;
   text-decoration: none;
 }
 
@@ -73,49 +73,9 @@ header {
   display: grid;
   align-self: center;
   grid-area: left;
-  margin: auto;
+  margin-left: 12%;
+  margin-bottom: 12%;
 }
-
-/* #retangulo1 {
-  display: grid;
-  position: fixed;
-  align-self: center;
-  width: 60px;
-  height: 9px;
-  left: 32px;
-  top: 60px;
-  border-radius: 3px 0px 0px 3px;
-
-  background: var(--cor4);
-  z-index: 99;
-}
-
-#retangulo2 {
-  display: grid;
-  position: fixed;
-  align-self: center;
-  width: 60px;
-  height: 9px;
-  left: 92px;
-  top: 60px;
-
-  background: #ffffff;
-  z-index: 99;
-}
-
-#retangulo3 {
-  display: grid;
-  align-self: center;
-  position: fixed;
-  width: 60px;
-  height: 9px;
-  left: 152px;
-  top: 60px;
-  border-radius: 0px 3px 3px 0px;
-
-  background: #ff0000;
-  z-index: 99;
-} */
 
 nav {
   display: grid;
@@ -160,12 +120,6 @@ main {
   color: white;
 }
 
-.bloco {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-}
-
 #imagemRestaurante {
   width: 100%;
 }
@@ -181,9 +135,7 @@ main {
     "h1 ."
     "reservar-mesa-form mapa";
   display: grid;
-  padding: 1%;
-  margin: 20px 50px 30px 50px;
-  padding-top: 7%;
+  padding: 2.5%;
 }
 
 #reservas h1 {
@@ -192,11 +144,11 @@ main {
 }
 
 .mesa {
-  display: flex;
   align-self: center;
   width: 100%;
   grid-area: mapa;
   margin: auto;
+  padding: 2.5%;
 }
 
 form {
@@ -245,20 +197,50 @@ select {
   margin-left: 13px;
 }
 
-#cardapio h1 {
-  font-size: 36px;
-  font-weight: 500;
+.bloco {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas:
+    "h1 . ."
+    "c1 c2 c3";
+  padding: 2.5%;
 }
 
-.cardapios img {
-  display: flex;
-  width: 33.1%;
-  height: 35%;
+#cardapio1 {
+  display: grid;
+  align-self: center;
+  grid-area: c1;
+  width: 100%;
+  padding: 1%;
+  transition: transform 0.2s;
+}
+
+#cardapio2 {
+  display: grid;
+  align-self: center;
+  grid-area: c2;
+  width: 100%;
+  padding: 1%;
+  transition: transform 0.2s;
+}
+
+#cardapio3 {
+  display: grid;
+  align-self: center;
+  grid-area: c3;
+  width: 100%;
+  padding: 1%;
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
 }
 
 .quem-somos {
   padding: 1%;
   margin: 0px 50px 30px 50px;
+  padding-top: 2%;
 }
 
 .quem-somos img {
@@ -329,4 +311,17 @@ html {
   background-color: var(--cor0);
   margin-left: 15px;
   margin-bottom: 20px;
+}
+
+/* Media Entry */
+
+@media screen and (max-width: 1105px) {
+  .reservar-mesa {
+    display: block;
+  }
+  #mapainterno {
+    width: 409px;
+    padding-top: 30px;
+    margin-left: 0px;
+  }
 }
