@@ -141,6 +141,7 @@ main {
 #reservas h1 {
   font-size: 36px;
   font-weight: 500;
+  padding-top: 40px;
 }
 
 .mesa {
@@ -156,6 +157,7 @@ form {
   font-family: var(--fonte-padrao);
   grid-area: reservar-mesa-form;
   font-size: 24px;
+  padding-top: 30px;
 }
 
 input,
@@ -322,10 +324,105 @@ html {
   #mapainterno {
     width: 409px;
     padding-top: 30px;
-    margin-left: 0px;
+  }
+
+  .quem-somos img {
+    width: 245.72px;
   }
 
   .formulario {
+    width: 100%;
+  }
+
+  .bloco {
+    display: block;
+    padding: 2.5%;
+  }
+
+  #cardapio1 {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    transition: transform 0.2s;
+  }
+
+  #cardapio2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 1%;
+    transition: transform 0.2s;
+  }
+
+  #cardapio3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 1%;
+    transition: transform 0.2s;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #mapainterno {
+    width: 30%;
+    padding-top: 30px;
+    margin-left: 0px;
+  }
+
+  input,
+  select {
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .email,
+  .nome {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #mapainterno {
+    width: 190%;
+    padding-top: 30px;
+    margin-left: 0px;
+  }
+
+  input,
+  select {
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .email,
+  .nome {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #mapainterno {
+    width: 150%;
+    padding-top: 30px;
+    margin-left: 0px;
+  }
+
+  input,
+  select {
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .email,
+  .nome {
     width: 100%;
   }
 }
