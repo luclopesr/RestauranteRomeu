@@ -369,7 +369,7 @@ html {
 
 @media screen and (max-width: 375px) {
   #mapainterno {
-    width: 30%;
+    width: 170% !important;
     padding-top: 30px;
     margin-left: 0px;
   }
@@ -409,20 +409,20 @@ html {
 
 @media screen and (max-width: 320px) {
   #mapainterno {
-    width: 150%;
+    width: 150% !important;
     padding-top: 30px;
     margin-left: 0px;
   }
 
   input,
   select {
-    width: 50%;
+    width: 130px !important;
     margin: 0px;
     padding: 0px;
   }
 
   .email,
   .nome {
-    width: 100%;
+    width: 100% !important;
   }
 }
