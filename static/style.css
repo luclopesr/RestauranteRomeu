@@ -385,6 +385,10 @@ html {
   .nome {
     width: 100%;
   }
+
+  nav > a {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -424,5 +428,9 @@ html {
   .email,
   .nome {
     width: 100% !important;
+  }
+
+  nav > a {
+    display: none;
   }
 }
