@@ -184,7 +184,7 @@ select {
   display: inline;
   background-color: white;
   border-radius: 5px;
-  margin-top: 15px;
+  margin: 15px 0px 15px 0px;
   cursor: pointer;
 }
 
