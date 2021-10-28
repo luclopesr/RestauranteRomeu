@@ -434,3 +434,31 @@ html {
     display: none;
   }
 }
+
+@media screen and (max-width: 280px) {
+  #mapainterno {
+    width: 120% !important;
+    padding-top: 30px;
+    margin-left: 0px;
+  }
+
+  input,
+  select {
+    width: 110px !important;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .email,
+  .nome {
+    width: 100% !important;
+  }
+
+  nav > a {
+    display: none;
+  }
+
+  .quem-somos img {
+    width: 100% !important;
+  }
+}

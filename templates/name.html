@@ -7,14 +7,12 @@
   {{ form.hidden_tag() }}
 
   <!-- Input Name -->
-  {{ form.name.label }} {{ form.name(class="nome", placeholder="Digite seu nome
-  completo") }}
+  {{ form.name.label }} {{ form.name(class="nome", placeholder="Digite seu nome completo") }}
   <!-- Validador Name -->
   {% block erroralertName %} {% endblock %}
 
   <!-- Input Email -->
-  {{ form.email.label }} {{ form.email(class="email", placeholder="Digite seu
-  e-mail") }}
+  {{ form.email.label }} {{ form.email(class="email", placeholder="Digite seu e-mail") }}
 
   <table border="0">
     <tr>
